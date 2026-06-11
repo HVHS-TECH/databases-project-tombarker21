@@ -1,23 +1,17 @@
-/**************************************************************/
-// fb_initialise()
-// Initialize firebase, connect to the Firebase project.
-// 
-// Find the config data in the Firebase console. Cog wheel > Project Settings > General > Your Apps > SDK setup and configuration > Config
-//
-// Input:  n/a
-// Return: n/a
-/**************************************************************/
- const firebaseConfig = {
-    apiKey: "AIzaSyBrn5cEyvlPPvsCyuisltGiqXN-WQWejOQ",
-    authDomain: "tom-barker-12comp.firebaseapp.com",
-    databaseURL: "https://tom-barker-12comp-default-rtdb.asia-southeast1.firebasedatabase.app",
-    projectId: "tom-barker-12comp",
-    storageBucket: "tom-barker-12comp.firebasestorage.app",
-    messagingSenderId: "624686099687",
-    appId: "1:624686099687:web:d527aaf983d2287fe88642"
-  };
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyDi1z7HOLIpfFd4UtAV6Z5P5Lt5_XSDoYY",
+  authDomain: "comp-2026-tom-barker.firebaseapp.com",
+  databaseURL: "https://comp-2026-tom-barker-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "comp-2026-tom-barker",
+  storageBucket: "comp-2026-tom-barker.firebasestorage.app",
+  messagingSenderId: "943483616470",
+  appId: "1:943483616470:web:75b3c0a66b0b37e5231d77",
+  measurementId: "G-MKDK2NK4HN"
+};
 
-  // Initialize Firebase
+// Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
   // This log prints the firebase object to the console to show that it is working.
