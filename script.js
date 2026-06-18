@@ -32,3 +32,11 @@ function display(snapshot) {
         // console.log("The message is: " + dbData)
     }
 }
+function homePage() {
+    if (UID = null){
+        alert ()
+    }
+    else{
+
+    }
+}
