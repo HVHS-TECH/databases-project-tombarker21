@@ -14,6 +14,17 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.containers {
+  max-width: 600px;
+  margin: auto;
+  background-color: #05224d;
+  padding: 2rem;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #E6FDFF;
+  text-decoration: none;
+}
+
 h1 {
   color: rgb(113, 204, 211);
   font-size: 2.5rem;
