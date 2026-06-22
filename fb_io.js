@@ -88,3 +88,8 @@ function homePage() {
 function goGeoDash() {
   window.location.href = "GeoDash/GeoDash game/index.html";
 }
+
+
+function goRacingGame() {
+  window.location.href = "Racing game/programming-project-tombarker21-main/index.html";
+}
