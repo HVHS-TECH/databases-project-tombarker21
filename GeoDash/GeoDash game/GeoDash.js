@@ -21,6 +21,23 @@ function endGame(_player, _obstacle){
 
 }
 
+function display(snapshot) {
+  var score = snapshot.val();
+  if (score === null) { // if there is no data, dbData will be null.
+    console.log('There was no record when trying to read the message');
+  }
+  else {
+    // console.log("The message is: " + dbData)
+     firebase.database().ref('/').set(
+      score
+    
+)
+  }
+}
+
+
+
+
 
 
 
