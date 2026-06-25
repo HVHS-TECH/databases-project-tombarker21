@@ -134,7 +134,7 @@ if (car.overlaps(finishLine)){
 timerFinshed = timer;
 allSprites.removeAll();
 alert("Your final time was " + timerFinshed + " seconds. Please refresh the page to play again :)");
-
+fb_highScores(timerFinshed, 'FormulaRacing');
 }
 
 
