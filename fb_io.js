@@ -48,6 +48,7 @@ let userAge
 let userGameName
 async function writeForm() {
   let UID = GLOBAL_user.uid
+  sessionStorage.setItem('UID', UID)
   let email = GLOBAL_user.email
   let userPFP = GLOBAL_user.photoURL
   const userAge = document.getElementById("userAge").value;
@@ -92,4 +93,11 @@ function goGeoDash() {
 
 function goRacingGame() {
   window.location.href = "Racing game/programming-project-tombarker21-main/index.html";
+}
+
+function fb_highScores(_Geoscore) {
+  firebase.database().ref('/geoDash/' + sessionStorage.getItem('UID')).set(
+    _Geoscore
+  )
+
 }
