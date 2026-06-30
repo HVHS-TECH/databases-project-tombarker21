@@ -95,10 +95,26 @@ function goRacingGame() {
   window.location.href = "Racing game/programming-project-tombarker21-main/index.html";
 }
 
-function fb_highScores(_score,_game) {
-  firebase.database().ref('/'+_game+'/' + sessionStorage.getItem('UID')).set(
+function fb_highScores(_score, _game) {
+  firebase.database().ref('/' + _game + '/' + sessionStorage.getItem('UID')).set(
     _score
-    
+
   )
+
+
+}
+async function fb_readScores() {
+  var snapshot = await firebase.database().ref('/FormulaRacing').once('value');
+  data = snapshot.val()
+  let names = Object.keys(data);
+  let scores = Object.values(data);
+  console.log(snapshot.val())
+  RacingGameScore.innerHTML = snapshot.val()
+  console.log(names + scores)
+  for (i = 0; i < names.length;i++){
+let key = names [i];
+console.log("Score " +i+" is for "+ key)
+  }
+  
 
 }
