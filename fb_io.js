@@ -111,10 +111,10 @@ async function fb_readScores() {
   console.log(snapshot.val())
   RacingGameScore.innerHTML = snapshot.val()
   console.log(names + scores)
-  for (i = 0; i < names.length;i++){
-let key = names [i];
-console.log("Score " +i+" is for "+ key)
+  for (i = 0; i < names.length; i++) {
+    let key = names[i];
+    console.log("Score " + i + " is for " + key)
   }
-  
+
 
 }
